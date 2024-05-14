@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+    <style>
+        input[type = "number"]{
+            background-color: palegoldenrod;
+        }
+        input[type = "button"]{
+            background-color: rgb(209, 132, 50);
+        }
+        h1{
+            font-family: 'Gil Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        body{
+            background-image: url(Imagem\ do\ WhatsApp\ de\ 2024-05-10\ à\(s\)\ 21.38.31_ac615874.jpg);
+            display: block;
+            margin: 0;
+        }
+        background-image{
+            display: ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type= "number" name= "txtn1" id= "txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id = "res"> Resultado: </div>
+    <script>
+        function somar(){
+            var sn1 = window.document.getElementById('txtn1')
+            var sn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(sn1.value)
+            var n2 = Number(sn2.value)
+            var s = n1 + n2
+            res.innerText = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>
